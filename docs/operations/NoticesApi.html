@@ -1,0 +1,269 @@
+<div class="main-content">
+  <h2><a name=""></a></h2>
+  <p>This is the  API</p>
+
+  <h2><a name="addToFavorites"></a>addToFavorites</h2>
+  <hr>
+  <p></p>
+  <p>This can only be done by the logged in user.</p>
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/Aleksandor2138/pets-docs/1.0.11/notices/favorites/{noticeId}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>POST</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="inline_response_201"><a href="">inline_response_201</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">noticeId</span>
+      <span class="param-type">Id</span>
+      
+      <p class="param-description">notices id</p>
+	  </li>
+  </ul>
+  <h2><a name="createNotice"></a>createNotice</h2>
+  <hr>
+  <p></p>
+  <p>This can only be done by the logged in user.</p>
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/Aleksandor2138/pets-docs/1.0.11/notices/category/{category}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>POST</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="PetNotisesRequest"><a href="">PetNotisesRequest</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">category</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">notices category [ lostFound | inGoodHands | sell ]</p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      
+      
+      <span class="param-in">Body: </span>
+      <span class="param-name">body</span>
+      <span class="param-type">UserPetIngood(UserPetIngood)</span>
+      
+      <p class="param-description">For category &quot;inGoodHands&quot;, delete  the price field.</p>
+	  </li>
+  </ul>
+  <h2><a name="createNotice"></a>createNotice</h2>
+  <hr>
+  <p></p>
+  <p>This can only be done by the logged in user.</p>
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/Aleksandor2138/pets-docs/1.0.11/notices/category/{category}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>POST</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="PetNotisesRequest"><a href="">PetNotisesRequest</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">category</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">notices category [ lostFound | inGoodHands | sell ]</p>
+	  </li>
+	  <li class="parameter">
+      <span class="param-in">Form: </span>
+      
+      
+      
+      
+      <span class="param-name">imageUrl</span>
+      <span class="param-type">byte[]</span>
+      
+      <p class="param-description"></p>
+	  </li>
+  </ul>
+  <h2><a name="deleteNoticeById"></a>deleteNoticeById</h2>
+  <hr>
+  <p></p>
+  <p>This can only be done by the logged in user.</p>
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/Aleksandor2138/pets-docs/1.0.11/notices/myNotices/{noticeId}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>DELETE</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="NotisesDel"><a href="">NotisesDel</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">noticeId</span>
+      <span class="param-type">Id</span>
+      
+      <p class="param-description">notices id</p>
+	  </li>
+  </ul>
+  <h2><a name="getAllNotices"></a>getAllNotices</h2>
+  <hr>
+  <p></p>
+  <p>This can only be done by the logged in user.</p>
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/Aleksandor2138/pets-docs/1.0.11/notices</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="PetNotisesRequest"><a href="">PetNotisesRequest</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+  </ul>
+  <h2><a name="getNoticesByCategory"></a>getNoticesByCategory</h2>
+  <hr>
+  <p></p>
+  
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/Aleksandor2138/pets-docs/1.0.11/notices/category/{category}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="PetNotisesRequest"><a href="">PetNotisesRequest</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">category</span>
+      <span class="param-type">String</span>
+      
+      <p class="param-description">notices category [ lostFound | inGoodHands | sell ]</p>
+	  </li>
+  </ul>
+  <h2><a name="getNotisesById"></a>getNotisesById</h2>
+  <hr>
+  <p></p>
+  
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/Aleksandor2138/pets-docs/1.0.11/notices/{noticeId}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="PetNotisId"><a href="">PetNotisId</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">noticeId</span>
+      <span class="param-type">Id</span>
+      
+      <p class="param-description">notices id</p>
+	  </li>
+  </ul>
+  <h2><a name="getUsersFavoriteNotices"></a>getUsersFavoriteNotices</h2>
+  <hr>
+  <p></p>
+  <p>This can only be done by the logged in user.</p>
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/Aleksandor2138/pets-docs/1.0.11/notices/favorites</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="PetNotisesRequest"><a href="">PetNotisesRequest</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+  </ul>
+  <h2><a name="myNotices"></a>myNotices</h2>
+  <hr>
+  <p></p>
+  <p>This can only be done by the logged in user.</p>
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/Aleksandor2138/pets-docs/1.0.11/notices/myNotices</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>GET</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="PetNotisesRequest"><a href="">PetNotisesRequest</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+  </ul>
+  <h2><a name="noticesNoticeIdImageUrlPatch"></a>noticesNoticeIdImageUrlPatch</h2>
+  <hr>
+  <p></p>
+  <p>This can only be done by the logged in user.</p>
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/Aleksandor2138/pets-docs/1.0.11/notices/{noticeId}/imageUrl</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>PATCH</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="NotisIMGResponses"><a href="">NotisIMGResponses</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      <span class="param-in">Form: </span>
+      
+      
+      
+      
+      <span class="param-name">notice</span>
+      <span class="param-type">byte[]</span>
+      
+      <p class="param-description"></p>
+	  </li>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">noticeId</span>
+      <span class="param-type">Id</span>
+      
+      <p class="param-description">notice id</p>
+	  </li>
+  </ul>
+  <h2><a name="removeFromFavorites"></a>removeFromFavorites</h2>
+  <hr>
+  <p></p>
+  <p>This can only be done by the logged in user.</p>
+  <h3 class="section">URL</h3>
+  <code>https://virtserver.swaggerhub.com/Aleksandor2138/pets-docs/1.0.11/notices/favorites/{noticeId}</code>
+  <h3 class="section">HTTP Method</h3>
+  <code>DELETE</code>
+  <h3 class="section">Response Type</h3>
+  <div class="model" data-model="inline_response_201_1"><a href="">inline_response_201_1</a></div>
+  <h3 class="section">Parameters</h3>
+  <ul>
+	  <li class="parameter">
+      
+      
+      <span class="param-in">Path: </span>
+      
+      
+      <span class="param-name">noticeId</span>
+      <span class="param-type">Id</span>
+      
+      <p class="param-description">notices id</p>
+	  </li>
+  </ul>
+</div>
